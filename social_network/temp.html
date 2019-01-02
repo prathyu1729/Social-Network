@@ -1,0 +1,169 @@
+<html><head></head><body><nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="home.php">PostBox</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	      	
+	      	
+	        <li><a href="profile.php?u_id=5">Gaurav</a></li>
+	       	<li><a href="home.php">Home</a></li>
+			<li><a href="members.php">Find People</a></li>
+			<li><a href="messages.php?u_id=new">Messages</a></li>
+
+
+					
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span><i class="glyphicon glyphicon-chevron-down"></i>1</span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="delete_account.php?u_id=5">Delete Account <span class="badge badge-secondary"></span></a>
+								</li>
+								
+								<li>
+									<a href="edit_profile.php?u_id=5">Edit Account</a>
+								</li>
+								
+								<li role="separator" class="divider"></li>
+								
+								<li>
+									<a href="logout.php">Logout</a>
+								</li>
+							</ul>
+						</li>
+									</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<form class="navbar-form navbar-left" method="get" action="results.php">
+						<div class="form-group">
+							<input type="text" class="form-control" name="user_query" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-info" name="search">Search</button>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+		<title>Gaurav</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/home_style2.css">
+
+<style>
+	#cover-img{
+		height: 400px;
+		width: 100%;
+	}
+	#update_profile{
+		position: absolute;
+		top: 58%;
+		left: 50%;
+		cursor: pointer;
+		transform: translate(-50%, -50%);
+	}
+	#button_profile{
+		position: absolute;
+		top: 67%;
+		left: 50%;
+		cursor: pointer;
+		transform: translate(-50%, -50%);
+	}
+	#own_posts{
+		border: 5px solid #e6e6e6;
+		padding: 40px 50px;
+	}
+	#post_img
+	{
+		height: 300px;
+		width: 100%;
+	}
+</style>
+
+
+
+<div class="row">
+	<div class="col-sm-8">
+		
+
+			<br>
+				</div>
+	
+
+
+	
+</div>
+
+
+
+<div class="row">
+	<div class="col-sm-2" style="background-color: #e6e6e6;text-align: center;left: 0.8%;border-radius: 5px;">
+		
+			<center><h2><strong>About</strong></h2></center>
+			<center><h4><strong>Gaurav Khandelwal</strong></h4></center>
+    		<center>
+				<img src="users/default.jpg" alt="Profile" class="img-circle" width="180px" height="185px">
+				
+				<form action="profile.php?u_id=" method="post" enctype="multipart/form-data">
+				<label id="update_profile"> Select Profile
+				<input type="file" style="display:none" name="u_image" size="60">
+				</label><br><br>
+				<button id="button_profile" name="update" class="btn btn-info">Update Profile</button>
+				</form>
+				
+			
+		</center>
+                                                   <br><br>
+<br>
+<br><strong>Lives In: </strong> India<p></p><br>
+			<p><strong>Gender: </strong> Female</p><br>
+			<p><strong>Date of Birth: </strong> 1997-12-06</p><br>
+			</div>
+	
+	<div class="col-sm-6">
+		
+					<div id="own_posts">
+						<div class="row">
+							<div class="col-sm-2">
+								<p><img src="users/default.jpg" class="img-circle" width="100px" height="100px"></p>
+							</div>
+							<div class="col-sm-6">
+								<h3><a style="text-decoration:none; cursor:pointer;color #3897f0;" href="user_profile.php?u_id=5">Gaurav</a></h3>
+								<h4><small style="color:black;">Updated a post on <strong>2019-04-24 21:55:04</strong></small></h4>
+							</div>
+							<div class="col-sm-4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2">
+							</div> 
+							<div class="col-sm-6">
+								<h3><p>hello</p></h3>
+							</div>
+							<div class="col-sm-4">
+							</div>
+						</div>
+					
+						<a href="single.php?post_id=8" style="float:right;"><button class="btn btn-success">View</button></a>
+						<a href="edit_post.php?post_id=8" style="float:right;"><button class="btn btn-info">Edit</button></a>
+						<a href="functions/delete_post.php?post_id=8" style="float:right;"><button class="btn btn-danger">Delete</button></a>
+						</div><br><br><br>
+							</div>
+	<div class="col-sm-2">
+	</div>
+</div>
+
+</body></html>
